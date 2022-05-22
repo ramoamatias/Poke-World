@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+  }
+
+  .text {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .textValor {
+    color: #00000069;
+    font-weight: bolder;
+    margin-left: 10px;
+  }
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image:url("../assets/fondoPokemon.png");
+  }
+
+  .card {
+    border-radius: 30px;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 3px 6px 15px black;
+    margin: 10px;
+  }
+
+  .card-header {
+    background-color: red;
+    position: relative;
+    height: 30%;
+    border-bottom: 10px solid black;
+  }
+
+  .card-header::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 80px;
+    left: 10px;
+  }
+
+  .card-header::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 10px;
+    right: 10px;
+
+  }
+
+  .card-header img {
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 9%;
+    left: 16%;
+  }
+
+  .card-id {
+    display: inline-block;
+    margin: 16px;
+    font-weight: bold;
+  }
+
+  .body-card {
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blanco {
+    background-color: transparent;
+    width: 100%;
+    height: 85px;
+  }
+
+  .container-tittle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .tittle-card {
+    display: inline-block;
+  }
+
+
+  .caracteristicas {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 20%;
+    /* background-color: violet; */
+    border-top: 1px solid black;
+  }
+
+  .footer-card div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .tipoPokemon {
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .type {
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 12px;
+    border-width: 2px;
+    border-style: solid;
+    /* box-shadow: 1px 1px 6px black; */
+    margin: 10px 0;
+
+  }
+
+  /* Electrico */
+  .electric {
+    background: yellow;
+    border-color: orange;
+  }
+
+  /* Planta */
+  .grass {
+    background: #00ff08;
+    border-color: #09b90e;
+  }
+
+  /* Hada */
+  .fairy {
+    background: #ff72d4;
+    border-color: #fb0cd1;
+  }
+
+  /* Siniestro */
+  .dark {
+    background: #6c4962;
+    border-color: #8d5382;
+    color: white;
+  }
+
+  .normal {
+    background: #fffeff;
+    border-color: #9b9b9b;
+  }
+
+/* Volador */
+  .flying {
+    background: #d0daff;
+    border-color: #7459a9;
+  }
+
+/* Lucha */
+  .fighting { 
+    background: #ffc772;
+    border-color: #af7b2c;
+  }
+
+  /* Roca */
+  .rock {
+    background: #7a4a00;
+    border-color: #563a0e;
+    color: white;
+  }
+
+  /* Tierra */
+  .ground {
+    background: #9d4f00;
+    border-color: #743b00;
+    color: white;
+  }
+
+  /* Bicho */
+  .bug {
+    background: #7de961;
+    border-color: #37af18;
+  }
+
+  /* Fantasma */
+  .ghost {
+    background: #8d50ad;
+    border-color: #512866;
+  }
+
+  /* Fuego */
+  .fire {
+    background: #ff940f;
+    border-color: #b96600;
+  }
+
+  /* Agua */
+  .water {
+    background: #00d0f1;
+    border-color: #358795;
+  }
+
+  /* Acero */
+  .steel {
+    background: #686c7c;
+    border-color: #3639449c;
+    color: white;
+  }
+
+  /* Psíquico */
+  .psychic {
+    background: #af70a7;
+    border-color: #7c3573;
+  }
+
+
+  /* Hielo */
+  .ice {
+    background: #6ff2ff;
+    border-color: #2aecff;
+  }
+
+  /* Desconocido */
+  .unknown {
+    background: #4e4e4ee6;
+    border-color: #939393e6;
+    color: white;
+  }
+
+  /* Dragón */
+  .dragon {
+    background: #ff4d30;
+    border-color: #e72000;
+  }
+
+  /* Sombra */
+  .shadow {
+    background: #0a0a0a;
+    border-color: #424242;
+    color: white;
+  }
+
+/* Veneno */
+  .poison {
+    background: #60274fe0;
+    border-color: #60274f;
+    color: white;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #00d0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 999999;
+  }
+
+  nav {
+    width: 27%;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  article {
+    display: inline-block;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .links{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .loading {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-top: 35vh;
+}
+
+.d1 , .d2 {
+  border: 5px solid #6c757d;
+  border-radius: 50px;
+}
+
+.loading .d1 {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  border-left-color: transparent;
+  animation: load161 1s linear infinite;
+}
+
+.loading .d2 {
+  width: 40px;
+  height: 40px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  margin: 7.5px;
+  animation: load2812 1.5s linear infinite;
+}
+
+@keyframes load161 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load2812 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
